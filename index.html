@@ -5,38 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
+      @import url(css/normalize.css);
+      :root {
+        --principal-color: #1098f7;
+        --secundary-color: #248232;
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: black;
+      }
       /*------------header start-----------------------*/
+      #navContainer {
+        position: sticky;
+        top: 0;
+        background-color: var(--secundary-color);
+        height: 70px;
+        z-index: 2;
+      }
+      #navbar {
+        display: flex;
+        font-size: 2em;
+        justify-content: space-around;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: white;
+        padding: 0.5em;
+      }
+      .nav-link:hover {
+        border-bottom: 2px dashed white;
+      }
+      .nav-link:visited {
+        color: white;
+      }
+      .nav-link:active {
+        color: var(--principal-color);
+        border-bottom: 2px dashed var(--principal-color);
+      }
+
+      #logo {
+        display: none;
+      }
+      @media screen and (min-width: 720px) {
+        #navContainer {
+          display: flex;
+          justify-content: space-around;
+        }
+        #logo-container {
+        }
+        #logo {
+          display: block;
+          height: 100%;
+          border-radius: 25%;
+          position: relative;
+          left: 50%;
+        }
+      }
       /*------------header End-----------------------*/
 
       /*------------Main start-----------------------*/
+      #welcome-container {
+        background-image: url(images/principal.jpg);
+        background-position: center;
+      }
       #welcome-section {
         height: 100vh;
-        background-color: black;
-        color: #1098f7;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: var(--principal-color);
+        text-align: center;
+        border-bottom: 1px solid white;
+      }
+      #welcome-section h1 {
+        position: relative;
+        top: 20%;
+        font-size: 6em;
+      }
+      #welcome-section p {
+        position: relative;
+        top: 25%;
+        font-size: 2em;
+        color: white;
       }
       /*------------Main End-----------------------*/
 
       /*------------Footer start-----------------------*/
       /*------------Footer End-----------------------*/
-      @media screen and (min-width: 720) {
-      }
       @media screen and (min-width: 1020) {
       }
     </style>
   </head>
   <body>
-    <header>
+    <header id="navContainer">
       <nav id="navbar">
-        <a href="#welcome-section">Welcome</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#welcome-section" class="nav-link">Welcome</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+      <div id="logo-container">
+        <img id="logo" src="images/whitelogo.png" alt="logo" />
+      </div>
     </header>
 
     <main id="main-doc">
-      <section id="welcome-section">
-        <h1>Welcome to CodeLexx</h1>
-      </section>
+      <div id="welcome-container">
+        <section id="welcome-section">
+          <h1>Welcome to CodeLexx</h1>
+          <p>You'll find all my projects here</p>
+        </section>
+      </div>
       <section id="projects">
         <section class="main-section">
           <h2 class="project-tile"></h2>

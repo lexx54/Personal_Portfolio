@@ -149,9 +149,40 @@
       /*------------Main End-----------------------*/
 
       /*------------Footer start-----------------------*/
-      /*------------Footer End-----------------------*/
-      @media screen and (min-width: 1020) {
+      #contact {
+        display: flex;
+        height: 40vh;
+        border-top: 1px solid white;
       }
+      #contact-logo {
+        flex: 0 0 40%;
+      }
+      #contact-links {
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+      }
+      .contact-link {
+        text-decoration: none;
+        padding-top: 1.5em;
+        color: white;
+        transition: color 200ms ease-in 50ms;
+      }
+      .contact-link:hover {
+        color: var(--principal-color);
+        transition: color 200ms ease-out 50ms;
+      }
+      @media screen and (min-width: 1020px) {
+        #contact-links {
+          flex-direction: row;
+          justify-content: space-around;
+          font-size: 2em;
+        }
+      }
+      /*------------Footer End-----------------------*/
     </style>
   </head>
   <body>
@@ -257,18 +288,20 @@
       </section>
     </main>
     <footer id="contact">
-      <div></div>
-      <div>
-        <a href="">Github</a>
-        <a href="">Codepen</a>
+      <div id="contact-logo">
+        <img src="images/whitelogo.png" alt="" />
+      </div>
+      <div id="contact-links">
+        <a href="#" class="contact-link">Github</a>
+        <a href="#" class="contact-link">Codepen</a>
         <a
           href="https://www.freecodecamp.org/lexx54"
           target="_blank"
           id="profile-link"
+          class="contact-link"
           >FreeCodeCamp</a
         >
       </div>
-      <div></div>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

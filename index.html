@@ -73,7 +73,6 @@
         background-color: rgba(0, 0, 0, 0.8);
         color: var(--principal-color);
         text-align: center;
-        border-bottom: 1px solid white;
       }
       #welcome-section h1 {
         position: relative;
@@ -91,6 +90,61 @@
         display: flex;
         flex-direction: column;
         color: white;
+      }
+      .main-section {
+        display: flex;
+        height: 60vh;
+      }
+      .main-text {
+        flex: 0 0 50%;
+        /* testing feature*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /******************/
+      }
+
+      .project-title {
+        font-size: 2.5em;
+      }
+
+      .text {
+        max-width: 85%;
+      }
+
+      .button {
+        background-color: var(--secundary-color);
+        color: white;
+        transition: background-color 200ms ease-in 50ms;
+        border-radius: 50%;
+        font-size: 1.2em;
+        padding: 1em;
+        text-decoration: none;
+      }
+      .button:hover {
+        font-size: 1.5em;
+        background-color: var(--principal-color);
+        transition: background-color 200ms ease-in 50ms;
+      }
+      .button:visited {
+        color: white;
+      }
+
+      .main-picture {
+        background-color: var(--principal-color);
+        flex: 0 0 50%;
+      }
+      .left {
+        flex-direction: row-reverse;
+      }
+      @media screen and (min-width: 720px) {
+        .button {
+          font-size: 1.5em;
+        }
+        .button:hover {
+          font-size: 1.7em;
+        }
       }
       /*------------Main End-----------------------*/
 
@@ -123,72 +177,82 @@
       <section id="projects">
         <section class="main-section left">
           <div class="main-text">
-            <h2 class="project-tile">title 1</h2>
-            <p>
+            <h2 class="project-title">Title 1</h2>
+            <p class="text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
               perferendis perspiciatis, iusto nesciunt modi in enim cumque
               repellat dicta reiciendis? Iusto magni cumque nam cupiditate
               reprehenderit voluptatem dolorem, aut sit?
             </p>
-            <a href="" class="button"></a>
+            <a href="" class="button">Visitar</a>
           </div>
-          <img src="" alt="" class="main-picture" />
+          <div class="main-picture">
+            <img src="" alt="" class="picture" />
+          </div>
         </section>
 
         <section class="main-section rigth">
           <div class="main-text">
-            <h2 class="project-tile">title 2</h2>
-            <p>
+            <h2 class="project-title">Title 2</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button"></a>
+            <a href="" class="button">Visitar</a>
           </div>
-          <img src="" alt="" class="main-picture" />
+          <div class="main-picture">
+            <img src="" alt="" class="picture" />
+          </div>
         </section>
 
         <section class="main-section left">
           <div class="main-text">
-            <h2 class="project-tile">title 3</h2>
-            <p>
+            <h2 class="project-title">Title 3</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button"></a>
+            <a href="" class="button">Visitar</a>
           </div>
-          <img src="" alt="" class="main-picture" />
+          <div class="main-picture">
+            <img src="" alt="" class="picture" />
+          </div>
         </section>
 
         <section class="main-section rigth">
           <div class="main-text">
-            <h2 class="project-tile">title 4</h2>
-            <p>
+            <h2 class="project-title">Title 4</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button"></a>
+            <a href="" class="button">Visitar</a>
           </div>
-          <img src="" alt="" class="main-picture" />
+          <div class="main-picture">
+            <img src="" alt="" class="picture" />
+          </div>
         </section>
 
         <section class="main-section left">
           <div class="main-text">
-            <h2 class="project-tile">title 5</h2>
-            <p>
+            <h2 class="project-title">Title 5</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button"></a>
+            <a href="" class="button">Visitar</a>
           </div>
-          <img src="" alt="" class="main-picture" />
+          <div class="main-picture">
+            <img src="" alt="" class="picture" />
+          </div>
         </section>
       </section>
     </main>

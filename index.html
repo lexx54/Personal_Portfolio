@@ -107,6 +107,7 @@
 
       .project-title {
         font-size: 2.5em;
+        text-align: center;
       }
 
       .text {
@@ -142,17 +143,25 @@
 
       .picture {
         border: 1px solid white;
+        max-width: 90%;
       }
 
       .left {
         flex-direction: row-reverse;
       }
+      .left .main-text {
+        padding-left: 1em;
+      }
+
       @media screen and (min-width: 720px) {
         .button {
           font-size: 1.5em;
         }
         .button:hover {
           font-size: 1.7em;
+        }
+        .picture {
+          max-width: 100%;
         }
       }
       /*------------Main End-----------------------*/
@@ -219,35 +228,49 @@
       </div>
 
       <section id="projects">
-        <section class="main-section left">
+        <section class="main-section left project-tile">
           <div class="main-text">
-            <h2 class="project-title">Title 1</h2>
+            <h2 class="project-title">Travel Page</h2>
             <p class="text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
               perferendis perspiciatis, iusto nesciunt modi in enim cumque
               repellat dicta reiciendis? Iusto magni cumque nam cupiditate
               reprehenderit voluptatem dolorem, aut sit?
             </p>
-            <a href="" class="button">Visitar</a>
+            <a
+              href="https://codepen.io/lexx54/pen/yLOxxJp"
+              class="button"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
           <div class="main-picture">
-            <img src="" alt="" class="picture" />
+            <img
+              src="images/travel.png"
+              alt="Travel Page Preview"
+              class="picture"
+            />
           </div>
         </section>
 
         <section class="main-section rigth">
           <div class="main-text">
-            <h2 class="project-title">Title 2</h2>
+            <h2 class="project-title">Survey Form</h2>
             <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button">Visitar</a>
+            <a
+              href="https://codepen.io/lexx54/pen/wvMLOeY"
+              class="button"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
           <div class="main-picture">
-            <img src="" alt="" class="picture" />
+            <img src="images/survey.png" alt="Survey Preview" class="picture" />
           </div>
         </section>
 
@@ -268,42 +291,36 @@
             >
           </div>
           <div class="main-picture">
-            <img src="images/javas.bmp" alt="JavaScript Page" class="picture" />
+            <img
+              src="images/javas.jpg"
+              alt="JavaScript Preview"
+              class="picture"
+            />
           </div>
         </section>
 
         <section class="main-section rigth">
           <div class="main-text">
-            <h2 class="project-title">Title 4</h2>
+            <h2 class="project-title">Biography</h2>
             <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               ipsum est dolorum nulla sed, cumque similique unde officiis veniam
               expedita explicabo aliquam at sit hic! Amet qui molestias ab
               consequuntur!
             </p>
-            <a href="" class="button">Visitar</a>
+            <a
+              href="https://codepen.io/lexx54/pen/PoZBLqQ"
+              class="button"
+              target="_blank"
+              >Visitar</a
+            >
           </div>
           <div class="main-picture">
-            <img src="" alt="" class="picture" />
+            <img src="images/bio.png" alt="Biography Preview" class="picture" />
           </div>
         </section>
 
-        <section class="main-section left">
-          <div class="main-text">
-            <h2 class="project-title">Title 5</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              ipsum est dolorum nulla sed, cumque similique unde officiis veniam
-              expedita explicabo aliquam at sit hic! Amet qui molestias ab
-              consequuntur!
-            </p>
-            <a href="" class="button">Visitar</a>
-          </div>
-          <div class="main-picture">
-            <img src="" alt="" class="picture" />
-          </div>
-        </section>
-      </section>
+        
     </main>
     <footer id="contact">
       <div id="contact-logo">

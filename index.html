@@ -6,208 +6,24 @@
     <title>Portfolio</title>
     <style>
       @import url(css/normalize.css);
-      :root {
-        --principal-color: #1098f7;
-        --secundary-color: #248232;
-        scroll-behavior: smooth;
-      }
-      body {
-        background-color: black;
-      }
-      /*------------header start-----------------------*/
-      #navContainer {
-        position: sticky;
-        top: 0;
-        background-color: var(--secundary-color);
-        height: 70px;
-        z-index: 2;
-      }
-      #navbar {
-        display: flex;
-        font-size: 2em;
-        justify-content: space-around;
-      }
-      .nav-link {
-        text-decoration: none;
-        color: white;
-        padding: 0.5em;
-      }
-      .nav-link:hover {
-        border-bottom: 2px dashed white;
-      }
-      .nav-link:visited {
-        color: white;
-      }
-      .nav-link:active {
-        color: var(--principal-color);
-        border-bottom: 2px dashed var(--principal-color);
-      }
 
-      #logo {
-        display: none;
-      }
-      @media screen and (min-width: 720px) {
-        #navContainer {
-          display: flex;
-          justify-content: space-around;
-        }
-        #logo-container {
-        }
-        #logo {
-          display: block;
-          height: 100%;
-          border-radius: 25%;
-          position: relative;
-          left: 50%;
-        }
-      }
-      /*------------header End-----------------------*/
-
-      /*------------Main start-----------------------*/
-      #welcome-container {
-        background-image: url(images/principal.jpg);
-        background-position: center;
-      }
-      #welcome-section {
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: var(--principal-color);
-        text-align: center;
-      }
-      #welcome-section h1 {
-        position: relative;
-        top: 20%;
-        font-size: 6em;
-      }
-      #welcome-section p {
-        position: relative;
-        top: 25%;
-        font-size: 2em;
-        color: white;
-      }
-
-      #projects {
-        display: flex;
-        flex-direction: column;
-        color: white;
-      }
-      .main-section {
-        display: flex;
-        height: 60vh;
-      }
-      .main-text {
-        flex: 0 0 50%;
-        /* testing feature*/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /******************/
-      }
-
-      .project-title {
-        font-size: 2.5em;
-        text-align: center;
-      }
-
-      .text {
-        max-width: 85%;
-      }
-
-      .button {
-        background-color: var(--secundary-color);
-        color: white;
-        transition: background-color 200ms ease-in 50ms;
-        border-radius: 50%;
-        font-size: 1.2em;
-        padding: 1em;
-        text-decoration: none;
-      }
-      .button:hover {
-        font-size: 1.5em;
-        background-color: var(--principal-color);
-        transition: background-color 200ms ease-in 50ms;
-      }
-      .button:visited {
-        color: white;
-      }
-
-      .main-picture {
-        /* background-color: var(--principal-color); */
-        flex: 0 0 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .picture {
-        border: 1px solid white;
-        max-width: 90%;
-      }
-
-      .left {
-        flex-direction: row-reverse;
-      }
-      .left .main-text {
-        padding-left: 1em;
-      }
-
-      @media screen and (min-width: 720px) {
-        .button {
-          font-size: 1.5em;
-        }
-        .button:hover {
-          font-size: 1.7em;
-        }
-        .picture {
-          max-width: 100%;
-        }
-      }
-      /*------------Main End-----------------------*/
-
-      /*------------Footer start-----------------------*/
-      #contact {
-        display: flex;
-        height: 40vh;
-        border-top: 10px solid white;
-      }
-      #contact-logo {
-        flex: 0 0 40%;
-      }
-      #contact-links {
-        flex: 0 0 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5em;
-      }
-      .contact-link {
-        text-decoration: none;
-        padding-top: 1.5em;
-        color: white;
-        transition: color 200ms ease-in 50ms;
-      }
-      .contact-link:hover {
-        color: var(--principal-color);
-        transition: color 200ms ease-out 50ms;
-      }
-      @media screen and (min-width: 1020px) {
-        #contact-links {
-          flex-direction: row;
-          justify-content: space-around;
-          font-size: 2em;
-        }
-      }
       /*------------Footer End-----------------------*/
     </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/warning.css">
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
+    <aside>
+      <div class="container">
+        <p class="turn-off"><span>CodeLexx</span></p>
+        <p class="turn-off">Site under construction</p>
+        <p class="turn-off">You can still click anywhere in the red box to see my first Projects</p>  
+      </div>
+    </aside>
     <header id="navContainer">
       <nav id="navbar">
         <a href="#welcome-section" class="nav-link">Welcome</a>
@@ -327,7 +143,7 @@
         <img src="images/whitelogo.png" alt="" />
       </div>
       <div id="contact-links">
-        <a href="#" class="contact-link"><i class="bx bxl-git"></i> Github</a>
+        <a href="https://github.com/lexx54" class="contact-link"><i class="bx bxl-git"></i> Github</a>
         <a
           href="https://codepen.io/your-work/"
           target="_blank"
@@ -344,6 +160,9 @@
         >
       </div>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
+
+

@@ -154,9 +154,6 @@ body {
   .main-section {
     flex-direction: row;
   }
-  .main-text:hover {
-    /* background-color: var(--principal-color); */
-  }
   .button {
     font-size: 1.5em;
   }
@@ -168,6 +165,17 @@ body {
   }
   .left .main-text {
     order: -1;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #project {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-section {
+    margin: 0;
+    /* flex: 0 0 40%; */
+    /* width: 40%; */
   }
 }
 /*------------Main End-----------------------*/

@@ -83,15 +83,22 @@ body {
 }
 .main-section {
   display: flex;
-  height: 60vh;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+.main-section:first-child {
+  margin-top: 3em;
 }
 .main-text {
-  flex: 0 0 50%;
+  flex: 0 0 50%; /*you may change this in higher width
   /* testing feature*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: justify;
   /******************/
 }
 
@@ -102,6 +109,8 @@ body {
 
 .text {
   max-width: 85%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .button {
@@ -129,18 +138,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  order: -1;
 }
 
 .picture {
   border: 1px solid white;
   max-width: 90%;
-}
-
-.left {
-  flex-direction: row-reverse;
-}
-.left .main-text {
-  padding-left: 1em;
 }
 
 @media screen and (min-width: 720px) {

@@ -1,6 +1,6 @@
 :root {
-  --principal-color: #1098f7;
-  --secundary-color: #248232;
+  --principal-color: rgb(16, 152, 247);
+  --secundary-color: rgb(36, 130, 50);
   scroll-behavior: smooth;
 }
 body {
@@ -12,7 +12,7 @@ body {
   top: 0;
   background-color: var(--secundary-color);
   height: 70px;
-  z-index: 2;
+  z-index: 998;
 }
 #navbar {
   display: flex;
@@ -43,12 +43,17 @@ body {
     display: flex;
     justify-content: space-around;
   }
+  #navbar {
+    flex: 1 0 0%;
+  }
+  #logo-container {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+  }
   #logo {
     display: block;
-    height: 100%;
-    border-radius: 25%;
-    position: relative;
-    left: 50%;
+    width: 40%;
   }
 }
 /*------------header End-----------------------*/
@@ -114,25 +119,24 @@ body {
 }
 
 .button {
-  background-color: var(--secundary-color);
+  border: 2px solid var(--secundary-color);
   color: white;
-  transition: background-color 200ms ease-in 50ms;
-  border-radius: 50%;
+  transition: border 200ms ease-in 50ms;
+  border-radius: 15px;
   font-size: 1.2em;
-  padding: 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
 }
 .button:hover {
   font-size: 1.5em;
-  background-color: var(--principal-color);
-  transition: background-color 200ms ease-in 50ms;
+  border: 4px solid var(--principal-color);
+  transition: border 200ms ease-in 50ms;
 }
 .button:visited {
   color: white;
 }
 
 .main-picture {
-  /* background-color: var(--principal-color); */
   flex: 0 0 50%;
   display: flex;
   flex-direction: column;
@@ -147,6 +151,12 @@ body {
 }
 
 @media screen and (min-width: 720px) {
+  .main-section {
+    flex-direction: row;
+  }
+  .main-text:hover {
+    /* background-color: var(--principal-color); */
+  }
   .button {
     font-size: 1.5em;
   }
@@ -156,17 +166,26 @@ body {
   .picture {
     max-width: 100%;
   }
+  .left .main-text {
+    order: -1;
+  }
 }
 /*------------Main End-----------------------*/
 
 /*------------Footer start-----------------------*/
 #contact {
   display: flex;
+  flex-direction: column;
   height: 40vh;
   border-top: 10px solid white;
 }
 #contact-logo {
   flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+#contact-logo img {
+  width: 70%;
 }
 #contact-links {
   flex: 0 0 60%;
@@ -174,17 +193,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 2em;
+  order: -1;
 }
 .contact-link {
   text-decoration: none;
-  padding-top: 1.5em;
+  padding-top: 1em;
   color: white;
   transition: color 200ms ease-in 50ms;
 }
 .contact-link:hover {
   color: var(--principal-color);
   transition: color 200ms ease-out 50ms;
+}
+@media screen and (min-width: 720px) {
+  #contact {
+    flex-direction: row;
+  }
+  #contact-links {
+    order: 2;
+  }
+  #contact-logo img {
+    width: 90%;
+  }
 }
 @media screen and (min-width: 1020px) {
   #contact-links {

@@ -1,9 +1,36 @@
 :root {
-  --principal-color: rgb(16, 152, 247);
-  --secundary-color: rgb(36, 130, 50);
+  --color-back: #070707;
+  --color-sec: #706c61;
+  --color-ter: #f8f4e3;
+  --complementary-1: #3c91e6;
+  --complementary-2: #fa824c;
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
+  min-height: 150vh;
 }
 /*------------header start-----------------------*/
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url(../images/principal720.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(180vh at 50% -90vh);
+}
+header .content {
+  max-width: 1000px;
+  text-align: center;
+}
+header .content h2 {
+  font-size: 4rem;
+  color: var(--complementary-1);
+  font-weight: 700;
+}

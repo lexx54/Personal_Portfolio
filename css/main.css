@@ -40,12 +40,62 @@ header .content h2 {
 section {
   min-height: 50vh;
 }
+/*skill section*/
 .skill-container {
+  display: flex;
+  flex-direction: column;
 }
+.skill-container h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  align-self: center;
+  font-weight: 700;
+  color: var(--complementary-1);
+}
+.skill-container article {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+.logo-cont {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.bar-progress {
+  width: 200px;
+  height: 20px;
+  background-color: black;
+  border-radius: 25px;
+}
+.bar-progress > div {
+  height: 20px;
+  background-color: var(--complementary-2);
+  /* border: 3px solid var(--complementary-2); */
+  border-radius: 25px;
+}
+
+.js-progress,
+.html-progress,
+.css-progress {
+  width: 130px;
+}
+.php-progress,
+.mysql-progress,
+.git-progress,
+.french-progress {
+  width: 30px;
+}
+.english-progress {
+  width: 160px;
+}
+/*favourite section*/
 .fav-container {
   position: relative;
   background-color: var(--color-sec);
 }
+
 .fav-container::before {
   content: "";
   position: absolute;

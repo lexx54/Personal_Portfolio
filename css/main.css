@@ -146,6 +146,9 @@ section {
   align-items: center;
   padding: 1em 0 0em 0;
 }
+.fav-container article:last-child {
+  padding-bottom: 3.5em;
+}
 .fav-photo {
   position: relative;
   width: 80%;
@@ -187,6 +190,9 @@ section {
   padding: 0.5em 1em;
   margin: 0em 0.5em;
   background-color: var(--complementary-2);
+  text-decoration: none;
+  color: var(--color-ter);
+  /* cursor: pointer; */
 }
 .fav-desc-tec {
   display: flex;
@@ -219,9 +225,22 @@ section {
 .projects-container {
 }
 .comment-container {
+  position: relative;
   background-color: var(--color-sec);
 
   /* clip-path: circle(76.7% at 49% 94%); */
+}
+.comment-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url(../images/wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 500px) {
@@ -229,6 +248,12 @@ section {
     height: 80px;
   }
   .fav-container::after {
+    height: 80px;
+  }
+  .fav-container article:last-child {
+    padding-bottom: 4.5em;
+  }
+  .comment-container::before {
     height: 80px;
   }
 }

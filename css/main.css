@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Tomorrow&display=swap");
 :root {
   --color-back: #070707;
   --color-sec: #706c61;
   --color-ter: #f8f4e3;
   --complementary-1: #3c91e6;
   --complementary-2: #fa824c;
+  --title-let: "Days One", sans-serif;
   scroll-behavior: smooth;
 }
 body {
   min-height: 150vh;
   background-color: var(--color-ter);
+  font-family: "Tomorrow", sans-serif;
 }
 /*-------------------------------------HEADER--------------------------------------*/
 header {
@@ -30,13 +33,14 @@ header .content {
   text-align: center;
 }
 header .content h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: var(--color-ter);
   font-weight: 700;
   text-shadow: 2px 2px var(--complementary-1);
 }
 
 /*-------------------------------------MAIN--------------------------------------*/
+
 section {
   min-height: 50vh;
 }
@@ -51,6 +55,7 @@ section {
   align-self: center;
   font-weight: 700;
   color: var(--complementary-1);
+  font-family: var(--title-let);
 }
 .skill-container article {
   display: flex;
@@ -132,6 +137,8 @@ section {
   font-size: 3em;
   align-self: center;
   color: var(--complementary-1);
+  text-align: center;
+  font-family: var(--title-let);
 }
 .fav-container article {
   display: flex;

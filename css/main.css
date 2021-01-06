@@ -237,8 +237,7 @@ section {
   width: 100%;
 }
 .project {
-  /* height: 350px; */
-  /* border: 1px solid #070707; */
+  /* width: 100%; */
   transform-style: preserve-3d;
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -246,19 +245,66 @@ section {
   transition: transform 0.5s ease-in-out;
 }
 .project-card {
+  height: 35vh;
+  /* border: 1px solid red; */
   margin-right: 20px;
   align-self: center;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .previous,
 .next {
   width: 35px;
-}
-.previous {
-  opacity: 0.3;
   justify-self: center;
   align-self: center;
   cursor: pointer;
+}
+.previous {
+  opacity: 0.3;
+}
+.project-img {
+  position: relative;
+}
+.overflow {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  width: 80%;
+  left: 0%;
+  right: 0%;
+  z-index: 990;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.overflow span {
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid var(--color-sec);
+  background-color: var(--color-ter);
+  margin: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #070707;
+  flex: 1;
+}
+.project-card:hover .overflow {
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  /* background-color: var(--color-back); */
+}
+.project-img:hover .fav-desc-tec {
+  opacity: 1;
+}
+.project-img div:first-child {
+  background-color: #3c91e6;
+  width: 95%;
+  height: 150px;
 }
 /*projects section*/
 .comment-container {

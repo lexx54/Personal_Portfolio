@@ -157,6 +157,7 @@ section {
 .fav-photo:hover .fav-desc-tec {
   z-index: 999;
   opacity: 1;
+  transition: opacity 0.5s ease;
   /* background-color: var(--color-back); */
 }
 .fav-photo img {
@@ -164,6 +165,35 @@ section {
   width: 100%;
   height: 100%;
 }
+
+.fav-desc-tec {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  width: 80%;
+  left: 0%;
+  right: 0%;
+  z-index: 990;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fav-desc-tec div {
+  /* width: 60px; */
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid var(--color-sec);
+  background-color: var(--color-ter);
+  margin: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #070707;
+  flex: 1;
+}
+
 .fav-desc {
   color: var(--color-ter);
   display: flex;
@@ -175,6 +205,7 @@ section {
 }
 
 .fav-desc-ti {
+  text-align: center;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -194,36 +225,42 @@ section {
   color: var(--color-ter);
   /* cursor: pointer; */
 }
-.fav-desc-tec {
-  display: flex;
-  position: absolute;
-  top: 40%;
-  width: 80%;
-  left: 0%;
-  right: 0%;
-  z-index: 990;
-  margin: 0 auto;
-  opacity: 0;
-}
-
-.fav-desc-tec div {
-  /* width: 60px; */
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid var(--color-sec);
-  background-color: var(--color-ter);
-  margin: 0 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #070707;
-  flex: 1;
-}
 
 /*projects section*/
 .projects-container {
+  display: grid;
+  grid-template-columns: 20% 200px 20%;
+  place-content: center;
 }
+.project-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.project {
+  /* height: 350px; */
+  /* border: 1px solid #070707; */
+  transform-style: preserve-3d;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.project-card {
+  margin-right: 20px;
+  align-self: center;
+  width: 200px;
+}
+.previous,
+.next {
+  width: 35px;
+}
+.previous {
+  opacity: 0.3;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+/*projects section*/
 .comment-container {
   position: relative;
   background-color: var(--color-sec);

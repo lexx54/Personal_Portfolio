@@ -1,0 +1,7 @@
+@media screen and (min-width: 1020px) {
+  /*-------------------------------------MAIN--------------------------------------*/
+  /*skills section*/
+  .skill-container article {
+    flex: 1 0 30%;
+  }
+}

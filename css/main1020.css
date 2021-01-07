@@ -4,4 +4,32 @@
   .skill-container article {
     flex: 1 0 30%;
   }
+
+  /*Favourite section*/
+  .fav-container {
+    flex-flow: row wrap;
+  }
+  .fav-container::before {
+    height: 150px;
+  }
+  .fav-container::after {
+    height: 150px;
+  }
+  .fav-container h2 {
+    flex: 1 0 100%;
+    margin: 1em 0 0;
+  }
+
+  .fav-container article {
+    flex: 1 0 40%;
+    padding: 1em 0;
+    margin: 0 0 10em;
+    justify-content: space-evenly;
+  }
+  .fav-container article:last-child {
+    padding-bottom: 2em;
+  }
+  .fav-desc-ti {
+    padding-top: 1.5em;
+  }
 }

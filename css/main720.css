@@ -3,7 +3,6 @@
   /*skills section*/
   .skill-container {
     flex-flow: row wrap;
-    /* justify-content: space-around; */
   }
   .skill-container h2 {
     flex: 1 0 100%;
@@ -16,10 +15,14 @@
     justify-content: center;
     flex: 1 0 40%;
   }
+
+  /*Favourite section*/
+  .fav-container {
+    /* flex-direction: row; */
+  }
   /*projects section*/
   .projects-container {
     grid-template-columns: 10% 450px 10%;
-    /* place-content: ; */
   }
 
   .project-card {

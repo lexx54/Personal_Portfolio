@@ -1,4 +1,21 @@
 @media screen and (min-width: 720px) {
+  /*-------------------------------------MAIN--------------------------------------*/
+  /*skills section*/
+  .skill-container {
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+  }
+  .skill-container h2 {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+  .skill-container article .logo-cont {
+    margin-right: 0.5em;
+  }
+  .skill-container article {
+    justify-content: center;
+    flex: 1 0 40%;
+  }
   /*projects section*/
   .projects-container {
     grid-template-columns: 10% 450px 10%;

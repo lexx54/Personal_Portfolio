@@ -240,7 +240,7 @@ section {
   /* width: 100%; */
   transform-style: preserve-3d;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
@@ -305,6 +305,20 @@ section {
   background-color: #3c91e6;
   width: 95%;
   height: 150px;
+}
+.img-inside {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.project-ti {
+  color: var(--color-sec);
+  font-size: 1.3em;
+  text-align: center;
+}
+.project-links {
+  display: flex;
+  justify-content: space-around;
 }
 /*projects section*/
 .comment-container {

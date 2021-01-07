@@ -13,7 +13,7 @@ d.addEventListener("click",e=>{
     }
   }
   if (e.target.matches(".next")){
-    if (position>-880){
+    if (position>-1100){
       position-=220;
       $gallery.style.transform=`translateX(${position}px)`;
     }

@@ -320,12 +320,10 @@ section {
   display: flex;
   justify-content: space-around;
 }
-/*projects section*/
+/*comment section*/
 .comment-container {
   position: relative;
   background-color: var(--color-sec);
-
-  /* clip-path: circle(76.7% at 49% 94%); */
 }
 .comment-container::before {
   content: "";

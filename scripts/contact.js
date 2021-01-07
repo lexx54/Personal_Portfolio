@@ -61,7 +61,7 @@ export function contactMaker(){
   //setting the footer layout
   $footer.style.display="flex";
   $footer.style.flexDirection="column";
-  $footer.style.justifyContent="center";
+  $footer.style.justifyContent="space-around";
   $footer.style.alignItems="center";
   $footer.style.height="20vh";
 

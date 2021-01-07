@@ -20,14 +20,27 @@
   .fav-container {
     /* flex-direction: row; */
   }
+  .fav-container::before {
+    height: 90px;
+  }
+  .fav-container::after {
+    height: 100px;
+  }
   /*projects section*/
   .projects-container {
     grid-template-columns: 10% 450px 10%;
+  }
+  .projects-container h2 {
+    font-size: 3em;
   }
 
   .project-card {
     height: 45vh;
     width: 450px;
     margin-right: 50px;
+  }
+
+  .comment-container::before {
+    height: 150px;
   }
 }

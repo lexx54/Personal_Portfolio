@@ -231,7 +231,16 @@ section {
 .projects-container {
   display: grid;
   grid-template-columns: 20% 200px 20%;
+  grid-template-rows: 20% 80%;
   place-content: center;
+}
+.projects-container h2 {
+  font-family: var(--title-let);
+  color: var(--complementary-1);
+  font-size: 2em;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1;
 }
 .project-wrapper {
   overflow: hidden;

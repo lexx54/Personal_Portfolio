@@ -43,5 +43,10 @@ export function moveRight(deviceWidth){
   }
 
 }
+export function moveUp(){
+  const $menu=d.querySelector(".menu");
+
+  $menu.classList.toggle("menu-move")
+}
 
 

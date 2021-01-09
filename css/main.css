@@ -6,6 +6,8 @@
   --complementary-1: #3c91e6;
   --complementary-2: #fa824c;
   --title-let: "Days One", sans-serif;
+}
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -38,6 +40,59 @@ header .content h2 {
   text-shadow: 2px 2px var(--complementary-1);
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.menu-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 5vw;
+  top: 5vh;
+  z-index: 990;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-btn i {
+  color: var(--color-ter);
+  font-size: 2em;
+}
+.menu-move {
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+.menu a {
+  min-height: 15%;
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--complementary-1);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu a:hover {
+  background-color: var(--complementary-1);
+  color: var(--color-ter);
+}
+.menu a:active {
+  background-color: var(--complementary-1);
+  color: var(--color-ter);
+}
 /*-------------------------------------MAIN--------------------------------------*/
 
 section {
@@ -343,7 +398,7 @@ section {
     height: 80px;
   }
   .fav-container article:last-child {
-    padding-bottom: 4.5em;
+    /* padding-bottom: 4.5em; */
   }
   .comment-container::before {
     height: 80px;

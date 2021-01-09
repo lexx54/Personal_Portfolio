@@ -21,14 +21,12 @@
   }
 
   .fav-container article {
-    flex: 1 0 40%;
+    flex: 0 0 50%;
     padding: 1em 0;
     margin: 0 0 10em;
     justify-content: space-evenly;
   }
-  .fav-container article:last-child {
-    padding-bottom: 2em;
-  }
+
   .fav-desc-ti {
     padding-top: 1.5em;
   }

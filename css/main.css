@@ -132,10 +132,10 @@ section {
 .fav-container > h2 {
   padding-top: 1.5em;
   font-size: 3em;
-  align-self: center;
   color: var(--complementary-1);
   text-align: center;
   font-family: var(--title-let);
+  font-weight: 700;
 }
 .fav-container article {
   display: flex;
@@ -149,13 +149,10 @@ section {
 .fav-photo {
   position: relative;
   width: 80%;
-  border-radius: 25px;
 }
 .fav-photo:hover .fav-desc-tec {
-  z-index: 999;
   opacity: 1;
   transition: opacity 0.5s ease;
-  /* background-color: var(--color-back); */
 }
 .fav-photo img {
   border-radius: 25px;
@@ -177,7 +174,6 @@ section {
 }
 
 .fav-desc-tec div {
-  /* width: 60px; */
   height: 40px;
   border-radius: 10px;
   border: 2px solid var(--color-sec);
@@ -205,10 +201,9 @@ section {
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;
+  text-shadow: 1px 1px var(--complementary-1);
 }
 .fav-desc-links {
-  /* width: 100%; */
-  /* align-self: stretch; */
   display: flex;
   justify-content: space-between;
 }
@@ -220,7 +215,10 @@ section {
   background-color: var(--complementary-2);
   text-decoration: none;
   color: var(--color-ter);
-  /* cursor: pointer; */
+  border: 0;
+}
+.fav-link:hover {
+  border: 2px solid var(--color-ter);
 }
 
 /*projects section*/

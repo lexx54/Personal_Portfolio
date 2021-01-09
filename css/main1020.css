@@ -36,10 +36,20 @@
   /*Projects section*/
   .projects-container {
     grid-template-columns: 10% 800px 10%; /*testing*/
+    grid-template-rows: 15% 85%; /*testing*/
   }
   .project-card {
+    height: 100%; /*testing*/
     width: 800px; /*testing*/
     margin-right: 120px; /*testing*/
+  }
+  .project-img {
+    width: 70%; /*testing*/
+    height: 60%; /*testing*/
+  }
+
+  .project-img div:first-child {
+    height: 100%; /*testing*/
   }
 
   .comment-container::before {

@@ -9,7 +9,6 @@
   scroll-behavior: smooth;
 }
 body {
-  min-height: 150vh;
   background-color: var(--color-ter);
   font-family: "Tomorrow", sans-serif;
 }
@@ -69,8 +68,6 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  /* background-color: yellow; */
-  border-radius: 50%;
 }
 .bar-progress {
   width: 200px;
@@ -81,7 +78,6 @@ section {
 .bar-progress > div {
   height: 20px;
   background-color: var(--complementary-2);
-  /* border: 3px solid var(--complementary-2); */
   border-radius: 25px;
 }
 
@@ -253,6 +249,7 @@ section {
   grid-template-columns: repeat(6, auto);
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 .project-card {
   height: 35vh;

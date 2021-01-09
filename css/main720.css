@@ -17,11 +17,8 @@
   }
 
   /*Favourite section*/
-  .fav-container {
-    /* flex-direction: row; */
-  }
   .fav-container::before {
-    height: 90px;
+    height: 85px;
   }
   .fav-container::after {
     height: 100px;
@@ -35,7 +32,6 @@
   }
 
   .project-card {
-    /* height: 45vh; */
     width: 450px;
     margin-right: 50px;
   }
@@ -43,11 +39,6 @@
     width: 80%;
     margin: 0 auto;
   }
-  .previous,
-  .next {
-    width: auto;
-  }
-
   .comment-container::before {
     height: 100px;
   }

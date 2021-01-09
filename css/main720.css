@@ -17,6 +17,9 @@
   }
 
   /*Favourite section*/
+  .fav-container article {
+    max-width: 90%;
+  }
   .fav-container::before {
     height: 85px;
   }

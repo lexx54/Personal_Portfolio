@@ -33,8 +33,13 @@
     padding-top: 1.5em;
   }
 
+  /*Projects section*/
   .projects-container {
-    /* padding-bottom: 2em; */
+    grid-template-columns: 10% 800px 10%; /*testing*/
+  }
+  .project-card {
+    width: 800px; /*testing*/
+    margin-right: 120px; /*testing*/
   }
 
   .comment-container::before {

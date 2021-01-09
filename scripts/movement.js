@@ -9,14 +9,17 @@ export function moveLeft(deviceWidth){
       position+=220;
       $gallery.style.transform=`translateX(${position}px)`;
     }
-  } else if (deviceWidth>=720){
+  } else if (deviceWidth>720 && deviceWidth<1020){
     if (position<0){
       position+=500;
       $gallery.style.transform=`translateX(${position}px)`;
     }
     console.log("720")
   }else{
-    
+    if (position<0){
+      position+=920;
+      $gallery.style.transform=`translateX(${position}px)`;
+    }
   }
 }
 
@@ -26,14 +29,17 @@ export function moveRight(deviceWidth){
       position-=220;
       $gallery.style.transform=`translateX(${position}px)`;
     }
-  } else if (deviceWidth>=720){
+  } else if (deviceWidth>720 && deviceWidth<1020){
     if (position>-2500){
       position-=500;
       $gallery.style.transform=`translateX(${position}px)`;
     }
     console.log("720")
-  }else{
-    
+  } else{
+    if (position>-4600){
+      position-=920;
+      $gallery.style.transform=`translateX(${position}px)`;
+    }
   }
 
 }

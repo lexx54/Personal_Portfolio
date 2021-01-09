@@ -1,4 +1,12 @@
 @media screen and (min-width: 1020px) {
+  .menu {
+    flex-direction: row;
+    height: 15%;
+  }
+  .menu a {
+    text-align: center;
+    flex: 1;
+  }
   /*-------------------------------------MAIN--------------------------------------*/
   /*skills section*/
   .skill-container article {

@@ -231,6 +231,7 @@ section {
 .projects-container h2 {
   font-family: var(--title-let);
   color: var(--complementary-1);
+  font-weight: 700;
   font-size: 2em;
   text-align: center;
   grid-column: 1/4;
@@ -241,7 +242,6 @@ section {
   width: 100%;
 }
 .project {
-  /* width: 100%; */
   transform-style: preserve-3d;
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -250,8 +250,7 @@ section {
   height: 100%;
 }
 .project-card {
-  height: 35vh;
-  /* border: 1px solid red; */
+  height: 100%;
   margin-right: 20px;
   align-self: center;
   width: 200px;
@@ -261,7 +260,6 @@ section {
 }
 .previous,
 .next {
-  /* width: 35px; */
   justify-self: center;
   align-self: center;
   cursor: pointer;
@@ -279,7 +277,6 @@ section {
   width: 80%;
   left: 0%;
   right: 0%;
-  z-index: 990;
   margin: 0 auto;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -297,17 +294,15 @@ section {
   color: #070707;
   flex: 1;
 }
-.project-card:hover .overflow {
+.project-img:hover .overflow {
   z-index: 999;
   opacity: 1;
   transition: opacity 0.5s ease;
-  /* background-color: var(--color-back); */
 }
 .project-img:hover .fav-desc-tec {
   opacity: 1;
 }
 .project-img div:first-child {
-  background-color: #3c91e6;
   width: 95%;
   height: 150px;
 }
@@ -329,6 +324,12 @@ section {
   padding: 0.5em 1em;
   border-radius: 10px;
   background-color: var(--complementary-2);
+  text-decoration: none;
+  color: var(--color-ter);
+}
+.project-link:hover {
+  border: 2px solid var(--complementary-1);
+  color: var(--complementary-1);
 }
 /*comment section*/
 .comment-container {

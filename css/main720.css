@@ -35,12 +35,20 @@
   }
 
   .project-card {
-    height: 45vh;
+    /* height: 45vh; */
     width: 450px;
     margin-right: 50px;
   }
+  .project-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .previous,
+  .next {
+    width: auto;
+  }
 
   .comment-container::before {
-    height: 150px;
+    height: 100px;
   }
 }

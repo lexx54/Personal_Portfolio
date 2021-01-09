@@ -32,4 +32,12 @@
   .fav-desc-ti {
     padding-top: 1.5em;
   }
+
+  .projects-container {
+    /* padding-bottom: 2em; */
+  }
+
+  .comment-container::before {
+    height: 150px;
+  }
 }

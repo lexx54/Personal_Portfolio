@@ -26,6 +26,7 @@
   .fav-container h2 {
     flex: 1 0 100%;
     margin: 1em 0 0;
+    /* font-size: 5rem; */
   }
 
   .fav-container article {

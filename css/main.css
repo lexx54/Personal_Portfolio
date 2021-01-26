@@ -103,6 +103,14 @@ section {
   display: flex;
   flex-direction: column;
 }
+.skill-container section {
+  min-height: fit-content;
+}
+.skill-container section > h3 {
+  font-size: 2rem;
+  font-family: var(--title-let);
+  margin-bottom: 0.5rem;
+}
 .skill-container h2 {
   font-size: 3em;
   margin-bottom: 1em;
@@ -113,7 +121,7 @@ section {
 }
 .skill-container article {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 1em;
 }
 .logo-cont {
@@ -123,6 +131,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 3em;
+  margin-right: 2rem;
 }
 .bar-progress {
   width: 200px;

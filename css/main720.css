@@ -4,16 +4,15 @@
   .skill-container {
     flex-flow: row wrap;
   }
+  .skill-container section {
+    flex: 1 0 40%;
+  }
   .skill-container h2 {
     flex: 1 0 100%;
     text-align: center;
   }
   .skill-container article .logo-cont {
     margin-right: 0.5em;
-  }
-  .skill-container article {
-    justify-content: center;
-    flex: 1 0 40%;
   }
 
   /*Favourite section*/

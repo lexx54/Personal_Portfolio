@@ -14,12 +14,25 @@
   width: 50px;
   border-radius: 25px;
   background-color: var(--principal);
+  z-index: 990;
+  border: 1px solid black;
 }
 .btn-circle {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: white;
+  z-index: 991;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-move {
+  transform: translateX(20px);
+  background: var(--tertiaty);
+  transition: transform 0.5s ease;
 }
 /*-------------------header------------*/
 header {

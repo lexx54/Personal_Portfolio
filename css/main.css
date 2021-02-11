@@ -57,7 +57,8 @@ header {
   align-items: center;
   font-size: 5rem;
 }
-.header-side h1 span:first-child {
+.header-side h1 span:first-child,
+.header-side-right p {
   color: white;
 }
 .header-side h1 span:last-child {
@@ -79,6 +80,21 @@ header {
   transform: scaleX(1);
   transition: transform 0.5s ease;
 }
+.header-side-right p {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 90%;
+}
+.header-side-right p span:first-child {
+  /* margin: 7rem 0 2rem; */
+}
+.header-side-right p span:last-child {
+  /* margin: 2.5rem 0; */
+}
 /* .header-side-translate {
   transform: scaleX(3);
   transition: transform 0.5s ease;
@@ -92,10 +108,10 @@ header {
     transform: scaleX(3);
     /* transition: transform 0.5s ease; */
   }
-  80% {
+  70% {
     transform: scaleX(3);
   }
-  100% {
+  90% {
     transform: scaleX(1);
   }
 }
@@ -106,10 +122,10 @@ header {
   20% {
     color: rgb(6255, 255, 255);
   }
-  80% {
+  70% {
     color: white;
   }
-  100% {
+  90% {
     color: red;
   }
 }

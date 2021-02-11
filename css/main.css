@@ -43,6 +43,7 @@ header {
 .header-side-left,
 .header-side-right {
   flex: 0 0 50%;
+  height: 100%;
 }
 .header-side {
   top: 0;
@@ -61,16 +62,56 @@ header {
 }
 .header-side h1 span:last-child {
   color: var(--principal);
+  animation-name: side-letter-coloring;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
 }
 .header-side-left {
   background-color: var(--principal);
   transform: scaleX(1);
   transition: transform 0.5s ease;
+  animation-name: sideTranslate;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
 }
 
 .header-side-right {
   transform: scaleX(1);
   transition: transform 0.5s ease;
+}
+/* .header-side-translate {
+  transform: scaleX(3);
+  transition: transform 0.5s ease;
+} */
+@keyframes sideTranslate {
+  0% {
+    transform: scaleX(1);
+    /* transition: transform 0.5s ease; */
+  }
+  20% {
+    transform: scaleX(3);
+    /* transition: transform 0.5s ease; */
+  }
+  80% {
+    transform: scaleX(3);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes side-letter-coloring {
+  0% {
+    color: red;
+  }
+  20% {
+    color: rgb(6255, 255, 255);
+  }
+  80% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
 }
 
 /*---------------------------------Main---------------------------------------------*/

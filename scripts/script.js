@@ -13,7 +13,6 @@ d.addEventListener("click",e=>{
   if (e.target.matches(".next")) moveRight(window.innerWidth);
   if(e.target.matches(".menu *")||e.target.matches(".menu-btn")||e.target.matches(".menu-btn i") ) moveUp();
   if(e.target.matches(".btn-circle")) {
-    // btnChange();
     changeMode("data-dark");
   }
 })

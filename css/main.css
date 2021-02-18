@@ -149,7 +149,7 @@ nav {
   align-items: center;
 }
 .menu-appear {
-  z-index: 990;
+  z-index: 980;
   opacity: 1;
   /* visibility: visible; */
   transition: all 0.5s ease;

@@ -1,8 +1,10 @@
+import { nav } from "./btn-appear.js";
 import { contactMaker } from "./contact.js";
 import { moveLeft, moveRight, moveUp } from "./movement.js";
 import { changeMode, setMode } from "./theme.js";
 
 const d=document;
+const $btnExit=d.querySelector(".menu-exit")
 
 d.addEventListener("DOMContentLoaded",e=>{
   contactMaker();
@@ -15,5 +17,6 @@ d.addEventListener("click",e=>{
   if(e.target.matches(".btn-circle")) {
     changeMode("data-dark");
   }
+  if(e.target ===$btnExit) nav.toggle();
 })
 

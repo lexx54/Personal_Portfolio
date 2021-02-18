@@ -2,16 +2,19 @@ const d=document,
 ls=localStorage;
 
 export function changeMode(dataType){
-  const $text=d.querySelectorAll(`[${dataType}='letter']`),
-  $background=d.querySelectorAll(`[${dataType}="background"]`);
+  const $headerText=d.querySelectorAll(`[${dataType}='letter']`),
+  $background=d.querySelectorAll(`[${dataType}="background"]`),
+  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`)
   
   if(ls.getItem("theme")==="light") {
     localStorage.setItem("theme",'dark')
-    darkMode($text,$background);
+    darkMode($headerText,$background);
+    lightMode($mainText,null) //Doesn't need to change background
     btnChange()
   }else if(ls.getItem("theme")==="dark") {
     localStorage.setItem("theme",'light')
-    lightMode($text,$background);
+    lightMode($headerText,$background);
+    darkMode($mainText,null) //Fix this bug
     btnChange()
   };
 }
@@ -30,13 +33,13 @@ export function setMode(dataType){
   };
 }
 
-function lightMode(t,b){
-  t.forEach(ele=> ele.style.color="white");
-  b.forEach(ele=> ele.style.backgroundColor='white');
+function lightMode(text,background){
+  text.forEach(ele=> ele.style.color="white");
+  background.forEach(ele=> ele.style.backgroundColor='white');
 }
-function darkMode(t,b){
-  t.forEach(ele=> ele.style.color="black");
-  b.forEach(ele=> ele.style.backgroundColor='black');
+function darkMode(text,background){
+  text.forEach(ele=> ele.style.color="black");
+  background.forEach(ele=> ele.style.backgroundColor='black');
 }
 function btnChange(){
   const $btn=d.querySelector('.btn-circle');

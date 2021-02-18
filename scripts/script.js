@@ -17,6 +17,7 @@ d.addEventListener("click",e=>{
   if(e.target.matches(".btn-circle")) {
     changeMode("data-dark");
   }
-  if(e.target ===$btnExit) nav.toggle();
+  if(e.target ===$btnExit || e.target.matches("nav li a")) nav.toggle();
+
 })
 

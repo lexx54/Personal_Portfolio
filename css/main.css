@@ -148,6 +148,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--principal);
 }
 .menu-appear {
   z-index: 980;
@@ -170,4 +171,42 @@ nav li a {
 }
 
 /*---------------------------------Main---------------------------------------------*/
+main > section {
+  display: flex;
+  flex-direction: column;
+}
 /*-----------Skills----------------*/
+#skills-section > h2,
+.skills-box h3 {
+  text-align: center;
+  padding: 1.5rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills-box {
+  flex: 0 0 80%;
+  box-shadow: 0px 1px 5px var(--principal);
+  border-radius: 15px;
+}
+.skills-box:not(.skills-box:last-child) {
+  margin-bottom: 2rem;
+}
+.skills-box h3 {
+  padding: 1rem 0;
+}
+.skills-box-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-box-info p {
+  flex: 0 0 50%;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.5rem;
+}

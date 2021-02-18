@@ -3,6 +3,7 @@
   --principal: #ff0000;
   --secondary: #14213d;
   --tertiaty: #fca311;
+  scroll-behavior: smooth;
 }
 /*---------------------------------Header---------------------------------------------*/
 /*-------------------dark btn------------*/
@@ -160,9 +161,13 @@ nav li {
   font-size: 2rem;
   padding: 1.5rem 0;
 }
+nav li:hover {
+  background-color: var(--tertiaty);
+}
 nav li a {
   text-decoration: none;
   color: white;
 }
 
 /*---------------------------------Main---------------------------------------------*/
+/*-----------Skills----------------*/

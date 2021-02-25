@@ -1,6 +1,6 @@
 import { nav } from "./btn-appear.js";
 import { contactMaker } from "./contact.js";
-import { moveLeft, moveRight, moveUp } from "./movement.js";
+import { movement } from "./movement.js";
 import { changeMode, setMode } from "./theme.js";
 
 const d=document;
@@ -11,8 +11,8 @@ d.addEventListener("DOMContentLoaded",e=>{
   setMode("data-dark");
 })
 d.addEventListener("click",e=>{
-  if (e.target.matches(".previous")) moveLeft(window.innerWidth);
-  if (e.target.matches(".next")) moveRight(window.innerWidth);
+  if (e.target.matches(".arrow-left")) movement.left("arrow-left");
+  if (e.target.matches(".arrow-right")) movement.right("arrow-right");
   if(e.target.matches(".menu *")||e.target.matches(".menu-btn")||e.target.matches(".menu-btn i") ) moveUp();
   if(e.target.matches(".btn-circle")) {
     changeMode("data-dark");

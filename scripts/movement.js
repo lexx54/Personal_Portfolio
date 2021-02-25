@@ -2,7 +2,29 @@ const  d=document,
   $gallery=d.querySelector(".project");
 let position=0
 
+export const movement={
+  right,
+  left
+};
 
+function right(direction){
+  const arrow= d.querySelector(`.${direction}`);
+  console.log(`moving ${direction}`);
+  if(arrow) console.log(arrow);
+}
+
+function left(direction){
+  const arrow= d.querySelector(`.${direction}`);
+  console.log(`moving ${direction}`);
+  if(arrow) console.log(arrow);
+}
+
+
+
+
+
+
+//old way
 export function moveLeft(deviceWidth){
   if(deviceWidth<720){
     if (position<0){

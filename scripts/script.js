@@ -9,6 +9,7 @@ const $btnExit=d.querySelector(".menu-exit")
 d.addEventListener("DOMContentLoaded",e=>{
   contactMaker();
   setMode("data-dark");
+  // movement.auto();
 })
 d.addEventListener("click",e=>{
   if (e.target.matches(".arrow-left")) movement.left("arrow-left");

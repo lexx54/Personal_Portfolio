@@ -4,9 +4,10 @@ let width=0;
 
 export const movement={
   right,
-  left
+  left,
 };
 
+auto()
 function right(direction){
   const arrow= d.querySelector(`.${direction}`),
     $card=d.querySelectorAll(".project-card"),
@@ -32,7 +33,9 @@ function left(direction){
   $card.forEach(card=>card.style.transform=`translateX(${width}px)`);
 }
 
-
+function auto(){
+  setInterval(console.log("hello"),1000)
+}
 
 
 

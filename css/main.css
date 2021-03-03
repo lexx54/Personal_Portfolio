@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 /*---------------------------------Header---------------------------------------------*/
-/*-------------------dark btn------------*/
+/*----------------------Dark BTN----------------------*/
 .btn-theme {
   position: absolute;
   top: 2rem;
@@ -35,7 +35,7 @@
   background: var(--tertiaty);
   transition: transform 0.5s ease;
 }
-/*-------------------header------------*/
+/*----------------------Header Section----------------------*/
 header {
   display: flex;
   height: 100vh;
@@ -90,7 +90,7 @@ header {
   margin: 0 auto;
   height: 90%;
 }
-/*-------Header Transitions----------*/
+/*----------------------Header Transition----------------------*/
 @keyframes sideTranslate {
   10% {
     transform: scaleX(1);
@@ -115,7 +115,7 @@ header {
   }
 }
 
-/*-------------------nav bar------------*/
+/*----------------------Nav Bar----------------------*/
 nav {
   z-index: -10;
   position: fixed;
@@ -184,7 +184,7 @@ main h3 {
 main p {
   font-size: 1.5rem;
 }
-/*-----------Skills----------------*/
+/*----------------------Skills----------------------*/
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -208,7 +208,7 @@ main p {
   text-align: center;
   padding: 0.5em 0;
 }
-/*-----------Projects----------------*/
+/*----------------------Projects----------------------*/
 #projects {
   background-color: var(--principal);
 }
@@ -276,4 +276,30 @@ main p {
   border: 1px solid white;
   padding: 0.7rem 1.3rem;
   margin-left: 1rem;
+  border-radius: 10px;
+}
+.project-card .project-card-desc span a:hover,
+.project-card .project-card-desc span a:active {
+  color: red;
+  background-color: white;
+}
+/*----------------------Description----------------------*/
+.desc-article {
+  display: flex;
+  justify-content: space-around;
+}
+.desc-article-info {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.desc-article-photo {
+  flex: 0 0 40%;
+}
+.desc-article-photo img {
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  margin: auto 0;
 }

@@ -287,6 +287,7 @@ main p {
 .desc-article {
   display: flex;
   justify-content: space-around;
+  height: 200px;
 }
 .desc-article-info {
   flex: 0 0 50%;
@@ -298,8 +299,8 @@ main p {
   flex: 0 0 40%;
 }
 .desc-article-photo img {
-  width: 100%;
-  height: 80%;
+  width: 80%;
+  height: 90%;
   border-radius: 50%;
   margin: auto 0;
 }
@@ -308,7 +309,6 @@ main p {
   background-color: transparent;
   width: 100%;
   height: 300px;
-  border: 1px solid red;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   display: flex;
   justify-content: center;
@@ -322,19 +322,19 @@ main p {
   transition: transform 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   transform-style: preserve-3d;
 }
+/* Allow the hover effect just in devices where this option is possible*/
 @media (hover: hover) {
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
 }
+/*In those Devices smaller than 768px usually doent support hover so do it auto*/
 @media screen and (max-width: 768px) {
   .flip-card-inner {
     animation: turnCard 15s ease-in infinite;
   }
 }
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-} */
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -354,6 +354,14 @@ main p {
 }
 .flip-card-back {
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.flip-card-back p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 @keyframes turnCard {

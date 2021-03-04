@@ -1,3 +1,14 @@
 @media screen and (min-width: 1020px) {
   /*-------------------------------------MAIN--------------------------------------*/
+  /*----------------------Skills----------------------*/
+  .skills-box {
+    flex: 0 0 30%;
+  }
+  /*----------------------Projects----------------------*/
+  .projects-container {
+    height: 50vh;
+  }
+  .project-card img {
+    object-fit: cover;
+  }
 }

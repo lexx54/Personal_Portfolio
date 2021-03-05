@@ -1,6 +1,7 @@
 import { nav } from "./btn-appear.js";
 import { contactMaker } from "./contact.js";
 import { movement } from "./movement.js";
+import { observer } from "./observer.js";
 import { changeMode, setMode } from "./theme.js";
 
 const d=document;
@@ -10,6 +11,7 @@ d.addEventListener("DOMContentLoaded",e=>{
   contactMaker();
   setMode("data-dark");
   // movement.auto();
+  observer();
 })
 d.addEventListener("click",e=>{
   if (e.target.matches(".arrow-left")) movement.left("arrow-left");

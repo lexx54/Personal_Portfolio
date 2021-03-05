@@ -6,9 +6,22 @@
   }
   /*----------------------Projects----------------------*/
   .projects-container {
-    height: 50vh;
+    height: 70vh;
   }
   .project-card img {
     object-fit: cover;
+  }
+
+  #description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #description h2 {
+    flex: 0 0 100%;
+  }
+  #description article {
+    flex: 0 0 40%;
   }
 }

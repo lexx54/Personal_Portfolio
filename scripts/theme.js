@@ -1,15 +1,12 @@
 const d=document,
-ls=localStorage;
+  ls=localStorage,
+  $mainText=d.querySelectorAll(`[data-dark="letter-contrast"]`),
+  $background=d.querySelectorAll(`[data-dark="background"]`),
+  $headerText=d.querySelectorAll(`[data-dark='letter']`),
+  $text=d.querySelectorAll(`[data-dark='letter']`);
 
 
 export function changeMode(dataType){
-  const $headerText=d.querySelectorAll(`[${dataType}='letter']`),
-  $background=d.querySelectorAll(`[${dataType}="background"]`),
-  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`),
-  $titleText=d.querySelectorAll(`[${dataType}="title-contrast"]`);
-  
-  console.log($mainText);
-
   if(ls.getItem("theme")==="light") {
     localStorage.setItem("theme",'dark');
     setColor($headerText,$background,"#000");
@@ -28,11 +25,6 @@ export function setMode(dataType){
     ?localStorage.getItem("theme")
     :(localStorage.setItem("theme","light"),"light");
 
-  const $text=d.querySelectorAll(`[${dataType}='letter']`),
-  $background=d.querySelectorAll(`[${dataType}="background"]`),
-  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`),
-  $titleText=d.querySelectorAll(`[${dataType}="title-contrast"]`);
-
   if(mode==="light"){
     setColor($text,$background,"#fff");
     setColor($mainText,undefined,"#000");
@@ -40,7 +32,6 @@ export function setMode(dataType){
   } else if (mode==="dark"){
     setColor($text,$background,"#000");
     setColor($mainText,undefined,"#fff");
-    setColor($titleText,undefined,"#fca311");
     btnChange();
   };
 }

@@ -9,6 +9,7 @@ export const movement={
 
 auto()
 function right(direction){
+  console.log("move")
   const arrow= d.querySelector(`.${direction}`),
     $card=d.querySelectorAll(".project-card"),
     $cardWidth=$card[0].clientWidth,

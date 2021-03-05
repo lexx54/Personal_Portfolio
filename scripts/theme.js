@@ -1,45 +1,53 @@
 const d=document,
 ls=localStorage;
 
+
 export function changeMode(dataType){
   const $headerText=d.querySelectorAll(`[${dataType}='letter']`),
   $background=d.querySelectorAll(`[${dataType}="background"]`),
-  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`)
+  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`),
+  $titleText=d.querySelectorAll(`[${dataType}="title-contrast"]`);
   
+  console.log($mainText);
+
   if(ls.getItem("theme")==="light") {
-    localStorage.setItem("theme",'dark')
-    darkMode($headerText,$background);
-    lightMode($mainText,null) //Doesn't need to change background
-    btnChange()
+    localStorage.setItem("theme",'dark');
+    setColor($headerText,$background,"#000");
+    setColor($mainText,undefined,"#fff");
+    btnChange();
   }else if(ls.getItem("theme")==="dark") {
-    localStorage.setItem("theme",'light')
-    lightMode($headerText,$background);
-    darkMode($mainText,null) //Fix this bug
-    btnChange()
-  };
-}
-
-export function setMode(dataType){
-  let mode=localStorage.getItem("theme")?localStorage.getItem("theme"):(localStorage.setItem("theme","light"),"light");
-  const $text=d.querySelectorAll(`[${dataType}='letter']`),
-  $background=d.querySelectorAll(`[${dataType}="background"]`);
-
-  if(mode==="light"){
-    lightMode($text,$background);
-    btnChange()
-  } else if (mode==="dark"){
-    darkMode($text,$background)
+    localStorage.setItem("theme",'light');
+    setColor($headerText,$background,"#fff");
+    setColor($mainText,undefined,"#000");
     btnChange();
   };
 }
 
-function lightMode(text,background){
-  text.forEach(ele=> ele.style.color="white");
-  background.forEach(ele=> ele.style.backgroundColor='white');
+export function setMode(dataType){
+  let mode=localStorage.getItem("theme")
+    ?localStorage.getItem("theme")
+    :(localStorage.setItem("theme","light"),"light");
+
+  const $text=d.querySelectorAll(`[${dataType}='letter']`),
+  $background=d.querySelectorAll(`[${dataType}="background"]`),
+  $mainText=d.querySelectorAll(`[${dataType}="letter-contrast"]`),
+  $titleText=d.querySelectorAll(`[${dataType}="title-contrast"]`);
+
+  if(mode==="light"){
+    setColor($text,$background,"#fff");
+    setColor($mainText,undefined,"#000");
+    btnChange();
+  } else if (mode==="dark"){
+    setColor($text,$background,"#000");
+    setColor($mainText,undefined,"#fff");
+    setColor($titleText,undefined,"#fca311");
+    btnChange();
+  };
 }
-function darkMode(text,background){
-  text.forEach(ele=> ele.style.color="black");
-  background.forEach(ele=> ele.style.backgroundColor='black');
+
+function setColor(text=[],background=[],color){
+  text.forEach(ele=> ele.style.color=`${color}`);
+  background.forEach(ele=> ele.style.backgroundColor=`${color}`);
 }
 function btnChange(){
   const $btn=d.querySelector('.btn-circle');

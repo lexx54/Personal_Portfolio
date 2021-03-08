@@ -465,3 +465,11 @@ main p {
     flex: 0 0 40%;
   }
 }
+@media screen and (max-width: 359px) {
+  .header-side span {
+    font-size: 4rem;
+  }
+  .flip-card {
+    height: 350px;
+  }
+}

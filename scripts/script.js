@@ -3,6 +3,7 @@ import { contactMaker } from "./contact.js";
 import { movement } from "./movement.js";
 import { observer } from "./observer.js";
 import { changeMode, setMode } from "./theme.js";
+import { lazyloading } from "./imgLazyLoad.js";
 
 const d=document;
 const $btnExit=d.querySelector(".menu-exit")
@@ -12,6 +13,7 @@ d.addEventListener("DOMContentLoaded",e=>{
   setMode("data-dark");
   // movement.auto();
   observer();
+  lazyloading();
 })
 d.addEventListener("click",e=>{
   if (e.target.matches(".arrow-left")) movement.left("arrow-left");

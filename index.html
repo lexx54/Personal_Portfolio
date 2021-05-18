@@ -63,15 +63,20 @@
               <p data-dark="letter-contrast">
                 <i class="fab fa-bootstrap"></i> Bootstrap
               </p>
+              <p data-dark="letter-contrast">
+                <i class="fab fa-react"></i> React
+              </p>
             </div>
           </section>
 
           <section class="skills-box">
             <h3 data-dark="title-contrast">Back-end</h3>
             <div class="skills-box-info">
-              <p data-dark="letter-contrast"><i class="fab fa-php"></i> PHP</p>
               <p data-dark="letter-contrast">
-                <i class="fas fa-database"></i> MySql
+                <i class="fab fa-node-js"></i> NodeJs
+              </p>
+              <p data-dark="letter-contrast">
+                <i class="fas fa-database"></i> MongoDB
               </p>
             </div>
           </section>
@@ -113,9 +118,10 @@
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/afk_preview.png"
+                  data-src="images/afk_preview.png"
                   alt="afk page preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -142,9 +148,10 @@
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/todo.jpg"
+                  data-src="images/todo.jpg"
                   alt="todo preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -167,9 +174,10 @@
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/survery.jpg"
+                  data-src="images/survery.jpg"
                   alt="survey preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -192,9 +200,10 @@
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/windbnb.jpg"
+                  data-src="images/windbnb.jpg"
                   alt="windbnb preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -217,9 +226,10 @@
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/profile.jpg"
+                  data-src="images/profile.jpg"
                   alt="profile preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -237,12 +247,14 @@
                 </span>
               </div>
             </article>
+
             <article class="project-card">
               <div class="project-card-img">
                 <img
-                  src="images/lightbox.png"
+                  data-src="images/lightbox.png"
                   alt="lightbox preview"
-                  class="project-card-img"
+                  class="project-card-img lazyload"
+                  loading="lazy"
                 />
                 <div class="project-card-tech">
                   <span>HTML</span>
@@ -257,6 +269,38 @@
                 <span>
                   <a href="https://github.com/lexx54/light-box">GitHub Link</a>
                   <a href="http://light-box.vercel.app/">Demo Link</a>
+                </span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-img">
+                <img
+                  data-src="./images/pokemon.png"
+                  alt="pokemon preview"
+                  class="project-card-img lazyload"
+                  loading="lazy"
+                />
+                <div class="project-card-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Ajax</span>
+                  <span>React</span>
+                </div>
+              </div>
+              <div class="project-card-desc">
+                <h3>Pokemon APP</h3>
+                <span>
+                  <a
+                    href="https://github.com/lexx54/Pokemon-App"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
+                  <a
+                    href="http://pokemon-app-lexx54.vercel.app//"
+                    target="_blank"
+                    >Demo Link</a
+                  >
                 </span>
               </div>
             </article>
@@ -276,7 +320,12 @@
             <p data-dark="letter-contrast">25 Years Old</p>
           </div>
           <div class="desc-article-photo">
-            <img src="./images/Untitled.png" alt="profile photo" />
+            <img
+              data-src="./images/newProfile.png"
+              alt="profile photo"
+              loading="lazy"
+              class="lazyload"
+            />
           </div>
         </article>
         <article class="flip-card">

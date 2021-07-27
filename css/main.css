@@ -43,6 +43,28 @@ body {
   color: black;
   border-bottom: 1px solid black;
 }
+/*-------------------------------- Header ------------------------------------*/
+header {
+  min-width: 70%;
+  max-width: 80%;
+  margin: 2rem 0 3rem;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.header__subtitle {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--dark-theme);
+}
+.header__text {
+  margin: 1rem 0;
+  color: var(--project-theme-one);
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
 /*-------------------------------- Main ------------------------------------*/
 
 /*-------------------------------- Aside -----------------------------------*/

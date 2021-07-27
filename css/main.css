@@ -1,1 +1,50 @@
+/*-------------------------------- General ---------------------------------*/
+html {
+  --white-theme: #fffffaff;
+  --dark-theme: #483c46ff;
+  --project-theme-one: #4281a4ff;
+  --project-theme-two: #48a9a6ff;
+  --project-theme-three: rgb(180, 180, 180);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*-------------------------------- Navegation ------------------------------*/
+.navbar {
+  min-width: 70%;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar__logo {
+  flex: 1 0 70%;
+  height: 50px;
+}
 
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar__links > * {
+  padding: 1rem 0.5rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--project-theme-three);
+  font-size: 1.2rem;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+  color: black;
+  border-bottom: 1px solid black;
+}
+/*-------------------------------- Main ------------------------------------*/
+
+/*-------------------------------- Aside -----------------------------------*/
+
+/*-------------------------------- Footer ----------------------------------*/

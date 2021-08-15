@@ -1,4 +1,4 @@
-const scrollDown = (space,container,list,title,current) => {
+const scrollDown = (space,container,title,current) => {
     title.style.transform = `translateY(${current-300}px)`;
     container[0].style.transform = `translateY(${current-300}px)`;
     for (let i = 1; i < container.length; i++){
@@ -11,7 +11,7 @@ const scrollDown = (space,container,list,title,current) => {
     if(space >=2300 ) container[5].style.transform = `translateY(${current-2550}px)`
   }
 
-const scrollUp = (space,container,list,title,current) => {
+const scrollUp = (space,container,title,current) => {
   title.style.transform = `translateY(${current-300}px)`;
   container[0].style.transform = `translateY(${current-300}px)`;
 
@@ -23,16 +23,8 @@ const scrollUp = (space,container,list,title,current) => {
   if(space >=1400 ) container[3].style.transform = `translateY(${current-1650}px)`
   if(space >=1900 ) container[4].style.transform = `translateY(${current-2100}px)`
   if(space >=2300 ) container[5].style.transform = `translateY(${current-2550}px)`
-  if(space>=2400){
-    // list.style.height = "110vh";
-    list.style.marginBottom = "18rem";
-    container[0].style.transform = `translateY(250px)`
-    container[1].style.transform = `translateY(-200px)`
-    container[2].style.transform = `translateY(-650px)`
-    container[3].style.transform = `translateY(-1100px)`
-    container[4].style.transform = `translateY(-1550px)`
-    container[5].style.transform = `translateY(-2000px)`
-  }
+  
+
 
 
   // for (let i = 1; i < container.length; i++){

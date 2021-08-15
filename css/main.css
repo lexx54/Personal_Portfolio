@@ -80,10 +80,15 @@ header {
 .main {
   min-width: 70%;
   max-width: 90%;
+  /* position: relative; */
 }
 .main h2 {
   font-size: 1.7rem;
   font-weight: 700;
+}
+.project__list {
+  border: 1px solid red;
+  margin-bottom: 170px;
 }
 .project__container {
   padding: 1rem 1.5rem;
@@ -92,6 +97,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .project__container:nth-child(even) {
   background-color: var(--project-theme-one);
@@ -142,6 +148,8 @@ header {
 @media (min-width: 760px) {
   .project__container {
     flex-direction: row;
+    height: 70vh;
+    position: static;
   }
   .project__info {
     flex: 0 0 50%;
@@ -152,5 +160,30 @@ header {
   }
 }
 /*-------------------------------- Aside -----------------------------------*/
-
+.skills__container {
+  margin: 2rem 0;
+  /* padding: 0 20rem; */
+}
+.skills__description {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.skills__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 1rem 0.5rem 0;
+  color: var(--project-theme-three);
+}
+.skills__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+@media (min-width: 720px) {
+  .skills__container {
+    margin: 2rem 3rem;
+  }
+}
 /*-------------------------------- Footer ----------------------------------*/
